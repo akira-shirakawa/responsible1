@@ -5,7 +5,11 @@ html{
 .main-wrapper{
     margin-top: 30px;
 }
+.top-image{
+    padding:0 10px;
+}
 .top{
+    
     width:100%;
 }
 img {
