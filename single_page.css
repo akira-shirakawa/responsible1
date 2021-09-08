@@ -31,7 +31,7 @@ body {
     width:40%;
     margin:0 auto;
     margin-bottom:3.2rem;
-    padding:15vh 10rem 15vh 10rem;
+    padding:5rem 10rem 5rem 10rem;
     border-style: double solid;
     border-width: 4px 1px;
     min-width:40rem;
@@ -61,7 +61,7 @@ body {
        padding:5rem 0 5rem 0;
    }
    .head_title{
-    padding:10vh 2.5rem 10vh 2.5rem;
+    padding:2rem 2.5rem 2rem 2.5rem;
     font-size:3rem;
    }
 }
@@ -73,7 +73,7 @@ body {
         font-size:2rem;
     }
     .head_title{
-     padding:5vh 2rem 5vh 2rem;
+     padding:1rem 2rem 1rem 2rem;
      font-size:2.8rem;
     }
     .head_button_hoverable{
@@ -82,12 +82,12 @@ body {
    
 }
 #main{
-    padding:5vh 0 5vh 0;
+    padding:3rem 0 3rem 0;
     text-align:center;
     color:var(--main);
 }
 .main{
-    margin:0 5vh 0 5vh;
+    margin:0 3rem 0 3rem;
     max-width:100rem;
     margin:0 auto;
 }
