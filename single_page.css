@@ -34,7 +34,7 @@ body {
     padding:5rem 10rem 5rem 10rem;
     border-style: double solid;
     border-width: 4px 1px;
-    min-width:40rem;
+    min-width:35rem;
 }
 .head_title_strong{
     font-weight: bolder;
@@ -52,13 +52,14 @@ body {
     display:inline-block;
     margin:0 auto;
     background-color: var(--head_button);
+    cursor: pointer;
 }
 .head_button_hoverable:hover{
     background-color: var(--head_button_hovered);
 }
 @media (min-width:430px) and (max-width:730px){
    #head{
-       padding:5rem 0 5rem 0;
+       padding:5rem 2rem 5rem 2rem;
    }
    .head_title{
     padding:2rem 2.5rem 2rem 2.5rem;
@@ -67,7 +68,7 @@ body {
 }
 @media(max-width:430px){
     #head{
-        padding:2rem 0 2rem 0;
+        padding:2rem 1rem 2rem 1rem;
     }
     .head_subtitle{
         font-size:2rem;
@@ -129,7 +130,7 @@ body {
 }
 @media (min-width:430px) and (max-width:730px){
     #main{
-        padding:1rem 1rem;
+        padding:1rem 2rem;
     }
     .main{
         margin:0;
@@ -140,10 +141,14 @@ body {
 }
 @media(max-width:430px){
     #main{
-        padding:0;
+        padding:0 1rem 0 1rem;
     }
     .main{
         margin:0;
+    }
+    .main_title{
+        font-size:2.3rem;
+        margin-top:1rem;
     }
     .container_item{
         width:50%;
@@ -231,14 +236,18 @@ body {
     background-color: var(--main);
     padding: 1.5rem 1rem;
     font-size:1.6rem;
+    cursor: pointer;
 }
 
 @media (min-width:430px) and (max-width:730px){
     #contact{
-        padding:0;
+        padding:0 3rem;
     }
     .contact{
         margin:0 auto;
+    }
+    .contact_title{
+        margin:1rem 0 1rem 0;
     }
     .form_submit_button{
         width:98%;
@@ -249,10 +258,13 @@ body {
 }
 @media(max-width:430px){
     #contact{
-        padding:0;
+        padding:0 3rem;
     }
     .contact{
         margin:0 ;
+    }
+    .contact_title{
+        margin:1rem 0 1rem 0;
     }
     .form_submit_button{
         width:100%;
