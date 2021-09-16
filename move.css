@@ -1,0 +1,374 @@
+html{
+    font-size:62.5%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 1.4rem; 
+    line-height: 1.6;
+    letter-spacing: .1em;
+    width:100%;
+    
+    }
+:root {
+   
+    --main:#1D809F;
+    --main_lighten:#2E91af;
+    --main_darken:#0c708e;
+    --black:#000000;
+    --white:#fff;
+    
+    }
+
+.button{
+    display:inline-block;
+    padding:2rem;
+    height:6rem;
+    box-sizing: border-box;
+    color:white;
+    font-size:1.6rem;
+    text-decoration: none;
+    border-radius:3px;
+    margin-top: 3rem;
+}
+.button_main{
+    background-color:var(--main);
+}
+.button_black{
+    background-color: var(--black);
+}
+.button_white{
+    background:var(--white);
+    color:var(--black);
+}
+.button_main:hover{
+    background-color: var(--main_darken);
+}
+.fix{
+    position:fixed;
+    width:6rem;
+    height:6rem;
+    display:block;
+    text-align:center;
+    font-size:3rem;
+    background-color:rgba(0,0,0,0.5);
+    color:var(--white);
+    top:0;
+    right:0;
+    z-index:10;
+}
+.fix>.icon_first{
+    padding-top:1rem;
+    color:var(--white);
+}
+.icon_second{
+    display:none;
+    padding-top:1rem;
+    color:var(--white);
+}
+.fix:hover{
+    background:var(--black);
+}
+#navbar{
+    width:30rem;
+    height:100vh;
+    background:var(--main);
+    position:fixed;
+    top:0;
+    right:0;
+    display:none;
+    z-index:6;
+
+}
+
+   
+ li{
+    list-style:none;
+    
+    color:var(--white);
+}
+ul>li:nth-child(1){
+    padding:3.5rem 0;
+    font-weight: bold;
+    font-size:2rem;
+    background:var(--main_darken);
+    display:inline-block;
+    width:100%;
+}
+
+.nabvar li a{
+    padding:2rem 0 ;
+    display:inline-block;
+    width:100%;
+    text-decoration:none;
+    color:var(--white);
+    padding-left:1rem;
+}
+.nabvar li:hover{
+    background: var(--main_lighten);
+}
+#header{
+    height:100vh;
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/bg-masthead.jpg);
+    display: flex;
+	align-items: center;
+}
+.header{
+    text-align:center;
+    width:100%;
+}
+h1{
+    font-size:8.8rem;
+    font-weight: bold;
+}
+h3{
+    font-size:2.8rem;
+}
+.header_button{
+    margin-top:3rem;
+}
+@media(max-width:700px){
+    #header{
+        height:80vh;
+    }
+}
+#about{
+    height:43rem;
+    display: flex;
+	align-items: center;
+
+}
+.about{
+    text-align:center;
+    width:100%;
+}
+h2{
+    font-size:3.2rem;
+    font-weight:bold;
+}
+.about_content{
+    font-size:2rem;
+}
+#services{
+
+    padding:12rem 0;
+    background-color: var(--main);
+    display: flex;
+	align-items: center;
+    justify-content:space-around
+}
+.services{
+    text-align:center;
+    width:90%;
+    max-width:120rem;
+	align-items: center;
+}
+.services_title{
+    font-size:4.7rem;
+    color:var(--white);
+}
+.wrapper{
+    display:flex;
+    flex-wrap: wrap;
+}
+.item{
+    box-sizing: border-box;
+    width:25%;
+    padding-top:3rem;
+}
+.icons{
+    height:11rem;
+    width: 11rem;
+    background-color: var(--white);
+    display:inline-block;
+    border-radius:50%;
+}
+.icon{
+    padding-top:3rem;
+    font-size:3.6rem;
+    color:var(--main);
+}
+h4{
+    font-size:2.4rem;
+    color:var(--white);       
+}
+@media(max-width:1000px){
+    .item{
+        width:50%;
+    }
+}
+@media(max-width:770px){
+    .item{
+        width:100%;
+    }
+}
+#welcome{
+    height:74rem;
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/bg-callout.jpg);
+    display: flex;
+	align-items: center;
+    justify-content:space-around;
+}
+.welcome{
+    width:80%;
+    text-align:center
+}
+#portfolio{
+    padding:12rem 0;
+    display: flex;
+	align-items: center;
+    justify-content:space-around;
+
+}
+.portfolio{
+    width: 80%;
+    text-align:center;
+    max-width: 120rem;
+}
+.portfolio_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.portfolio_item{
+    position:relative;
+    height: 37rem;
+    box-sizing: border-box;
+    width:50%;
+    
+}
+.portfolio_item>.face:hover{
+    transform: scale(0.85);   
+    transition: 0.5s;
+}
+.portfolio_wrapper .portfolio_item:nth-child(1)>.face{
+    
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/portfolio-1.jpg);
+   
+}
+.portfolio_wrapper .portfolio_item:nth-child(2)>.face{
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/portfolio-2.jpg);
+   
+}
+.portfolio_wrapper .portfolio_item:nth-child(3)>.face{
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/portfolio-3.jpg);
+   
+}
+.portfolio_wrapper .portfolio_item:nth-child(4)>.face{
+    background-image: url(https://motti.portfolio-site.net/sample/top-one-view/img/portfolio-4.jpg);
+   
+}
+
+
+.face{
+    width:100%;
+    height:37rem;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+}
+.face_color{
+    width:100%;
+    height:37rem;
+}
+.face_color:hover{
+    background-color: var(--main);
+    opacity:0.7;
+    transition: 0.5s;
+
+}
+.portfolio_text{
+    position:absolute;
+    pointer-events: none;
+    top:40%;
+    left:30%;
+    z-index:5;
+}
+.portfolio_h3{
+    font-size:3.2rem;
+    color:var(--white);
+}
+.portfolio_p{
+    font-size:1.9rem;
+    color:var(--white);
+}
+@media(max-width:1000px){
+    .portfolio{
+        max-width:50rem;
+        width:95%;
+        margin:0 auto;
+    }
+    .portfolio_item{
+        width:100%;
+        margin-top:1rem;
+    }
+    .portfolio_text{
+        bottom:10%;
+        left:10%;
+        z-index:5;
+    }
+
+
+}
+@media(max-width:500px){
+    .face,.face_color,.portfolio_item{
+        height:60vw;
+    }
+}
+#buttons{
+    height: 36rem;
+    background: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons{
+    text-align:center;
+    margin-top:3rem;
+}
+.button_h2{
+    font-size:3rem;
+    font-weight: bold;
+    color:var(--white);
+}
+.button_margin{
+    margin-left:2rem;
+}
+
+#contact{
+    height: 48rem;
+}
+iframe{
+    width:100%;
+    height:48rem;
+}
+#footer{
+    height: 30rem;
+    display: flex;
+	align-items: center;
+    justify-content:space-around;
+}
+.footer{
+    width:80%;
+    text-align:center;
+}
+.footer_contact{
+    height: 6.4rem;
+    width: 6.4rem;
+    display:inline-block;
+    border-radius:50%;
+    background: var(--main);
+    margin-left:3rem;
+}
+.footer_icon{
+    font-size:2.4rem;
+    color:var(--white);
+    padding-top:2rem;
+}
+.footer_contact:hover{
+    background: var(--main_darken);
+    cursor: pointer;
+}
+.copy{
+    margin-top:6rem;
+}
